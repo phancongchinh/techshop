@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.20" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.17" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.20" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.20">
         <PrivateAssets>all</PrivateAssets>
@@ -18,7 +18,13 @@
 
     <ItemGroup>
       <AdditionalFiles Include="Areas\Backoffice\Views\Category\Index.cshtml" />
+      <AdditionalFiles Include="Areas\Backoffice\Views\Role\Index.cshtml" />
       <AdditionalFiles Include="Views\User\Info.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Areas\Backoffice\Pages\" />
+      <Folder Include="wwwroot\uploads\images\" />
     </ItemGroup>
 
 </Project>

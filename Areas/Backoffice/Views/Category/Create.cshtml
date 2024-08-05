@@ -2,12 +2,18 @@
 
 @{
     ViewBag.Title = "Backoffice";
-    Layout = "_Layout";
+    Layout = "_BackofficeLayout";
 }
 
-<h2>Add new category</h2>
+<h2>New category</h2>
 
-<div class="container container-fluid">
+<div>
+    <div class="d-flex">
+        <div class="ms-auto">
+            <a asp-area="Backoffice" asp-controller="Category" asp-action="Index" class="btn btn-link">View all categories</a>
+        </div>
+    </div>
+
     <div class="row mt-4">
         <div class="col-4">
             <form asp-action="Create" method="post">

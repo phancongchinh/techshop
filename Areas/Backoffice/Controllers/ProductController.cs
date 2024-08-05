@@ -1,5 +1,4 @@
-﻿using System.Net;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Techshop.Models.Entities;
@@ -13,6 +12,13 @@ namespace Techshop.Areas.Backoffice.Controllers;
 public class ProductController : Controller
 {
     private readonly UnitOfWork _unit = new UnitOfWork();
+    private readonly IWebHostEnvironment _hostEnvironment;
+
+    public ProductController(IWebHostEnvironment webHostEnvironment)
+    {
+        _hostEnvironment = webHostEnvironment;
+    }
+
 
     public IActionResult Index()
     {
@@ -20,23 +26,25 @@ public class ProductController : Controller
         return View(products);
     }
 
-    public IActionResult AddProduct()
+    public IActionResult Create()
     {
         var categories = _unit.CategoryRepository.Get().ToList();
-        ViewBag.Categories = new SelectList(categories, "Id", "Name");
-        return View();
+        var productVm = new ProductVm()
+        {
+            Categories = categories
+        };
+
+        return View(productVm);
     }
 
     [HttpPost]
-    public IActionResult AddProduct(ProductVm productVm)
+    public IActionResult Create(ProductVm productVm)
     {
         if (!ModelState.IsValid) return View(productVm);
 
-        // foreach (var file in productVm.Images)
-        // {
-        //     string filePath = 
-        // }
-        
+
+        var categories = _unit.CategoryRepository.Get(e => productVm.SelectedCategoryIds.Contains(e.Id)).ToList();
+
         var product = new Product()
         {
             Brand = productVm.Brand,
@@ -44,10 +52,38 @@ public class ProductController : Controller
             Price = productVm.Price,
             Description = productVm.Description,
             Quantity = productVm.Quantity,
+            Categories = categories
         };
 
         _unit.ProductRepository.Insert(product);
         _unit.Save();
+
+        var files = HttpContext.Request.Form.Files;
+        
+        if (files.Count > 0)
+        {
+            foreach (var item in files)
+            {
+                var rootPath = _hostEnvironment.WebRootPath;
+                var uploads = Path.Combine(rootPath, "uploads/images");
+                var extension = Path.GetExtension(item.FileName);
+                var dynamicFileName = Guid.NewGuid() + "_" + product.Id + extension;
+                using (var filesStream = new FileStream(Path.Combine(uploads, dynamicFileName), FileMode.Create))
+                {
+                    item.CopyTo(filesStream);
+                }
+
+                //add product Image for new product
+
+                var image = new Image { Path = dynamicFileName, ProductId = product.Id };
+                
+                _unit.ImageRepository.Insert(image);
+                // product.Images.Add(new Image { Path = dynamicFileName });
+            }
+        }
+        
+        _unit.Save();
+        
         return View("Index");
     }
 

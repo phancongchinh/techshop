@@ -1,4 +1,5 @@
-﻿using Techshop.Models.Entities;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Techshop.Models.Entities;
 
 namespace Techshop.Models.ViewModels;
 
@@ -14,7 +15,10 @@ public class ProductVm
 
     public int Quantity { get; set; }
 
-    public List<Category> Categories { get; set; }
+    public int[] SelectedCategoryIds { get; set; }
+
+
+    public IEnumerable<Category>? Categories { get; set; }
 
     public List<IFormFile> Images { get; set; }
 }

@@ -2,19 +2,22 @@
 
 @{
     ViewBag.Title = "Backoffice";
-    Layout = "_Layout";
+    Layout = "_BackofficeLayout";
 }
 
 <h2>User List</h2>
 
-<div class="container container-fluid">
-    <div class="row">
+<div>
+
+    <div class="row mt-5">
         <table class="table">
             <thead>
             <tr>
-                <td class="col-2">ID No.</td>
+                <td class="col-2">User No.</td>
                 <td class="col-3">Username</td>
                 <td class="col-3">Fullname</td>
+                <td class="col-2">Phone</td>
+                <td class="col-2">Address</td>
                 <td class="col-2">Role</td>
                 <td class="col-2"></td>
             </tr>
@@ -27,10 +30,12 @@
                     <td>@i.Id</td>
                     <td>@i.Username</td>
                     <td>@i.FullName</td>
+                    <td>@i.Phone</td>
+                    <td>@i.Address</td>
                     <td>@i.Role.Name</td>
-                    <td class="col-3">
-                        <a class="btn btn-link" asp-area="Backoffice" asp-controller="User" asp-action="Info">Details</a>
-                    </td>
+                    @* <td class="col-3"> *@
+                    @*     <a class="btn btn-link" asp-area="Backoffice" asp-controller="User" asp-action="Info">Details</a> *@
+                    @* </td> *@
                 </tr>
             }
             </tbody>

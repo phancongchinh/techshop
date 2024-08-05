@@ -1,4 +1,4 @@
-﻿@model Techshop.Models.ViewModels.RegisterVm
+﻿@model Techshop.Models.ViewModels.UserUpdateVm
 
 @{
     ViewBag.Title = "User's Info";
@@ -7,14 +7,21 @@
 
 <h2>User's Info</h2>
 
-<div class="container container-fluid">
+<div class="">
 
     <div class="d-flex">
         <div class="ms-auto">
-            <a asp-controller="Order" asp-action="Index" class="btn btn-link">View my orders</a>
+            @if (User.Identity is { IsAuthenticated: true } && User.IsInRole("Administrator"))
+            {
+                <a asp-area="Backoffice" asp-controller="Dashboard" asp-action="Index" class="btn btn-link">Go to admin site</a>
+            }
+            else
+            {
+                <a asp-controller="Order" asp-action="Index" class="btn btn-link">View my orders</a>
+            }
         </div>
     </div>
-    
+
     <form asp-controller="User" asp-action="Info" method="post">
 
         <div class="d-flex flex-column gap-2">

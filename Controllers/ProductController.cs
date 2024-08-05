@@ -18,6 +18,11 @@ public class ProductController : Controller
         if (product == null) return NotFound();
 
         return View(product);
+    }
 
+    public IActionResult Search(string q)
+    {
+        var products = _unit.ProductRepository.Get(e => e.Name.Contains(q), includeProperties: "Images").ToList();
+        return View(products);
     }
 }

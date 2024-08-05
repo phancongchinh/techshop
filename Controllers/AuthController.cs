@@ -30,6 +30,10 @@ public class AuthController : Controller
         if (user != null)
         {
             await Authenticate(user);
+
+            if (user.Role.Name == "Administrator")
+                return Redirect("/Backoffice/Dashboard");
+
             return RedirectToAction("Index", "Home");
         }
 
@@ -102,5 +106,10 @@ public class AuthController : Controller
 
         ModelState.AddModelError("", "The same account already exist");
         return View(model);
+    }
+
+    public IActionResult AccessDenied()
+    {
+        return View();
     }
 }

@@ -2,12 +2,18 @@
 
 @{
     ViewBag.Title = "Backoffice";
-    Layout = "_Layout";
+    Layout = "_BackofficeLayout";
 }
 
 <h2>Product List</h2>
 
-<div class="container container-fluid">
+<div>
+    <div class="d-flex">
+        <div class="ms-auto">
+            <a class="btn btn-link" asp-area="Backoffice" asp-controller="Product" asp-action="Create">Add new product</a>
+        </div>
+    </div>
+
     <div class="row">
         <table class="table">
             <thead>

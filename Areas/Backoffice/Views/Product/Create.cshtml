@@ -2,12 +2,12 @@
 
 @{
     ViewBag.Title = "Backoffice";
-    Layout = "_Layout";
+    Layout = "_BackofficeLayout";
 }
 
-<h2>Add new product</h2>
+<h2>New product</h2>
 
-<div class="container container-fluid">
+<div class="">
 
     <div class="d-flex">
         <div class="ms-auto">
@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <form asp-area="Backoffice" enctype="multipart/form-data" asp-controller="User" asp-action="Info" method="post">
+    <form enctype="multipart/form-data" asp-area="Backoffice" asp-controller="Product" asp-action="Create" method="post">
 
         <div class="d-flex flex-column gap-2">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -33,14 +33,13 @@
             </div>
 
             <div class="form-group">
-                <select class="form-select" multiple>
-                    <option selected>Select categories</option>
-                    @foreach (var c in ViewBag.Categories)
-                    {
-                        <option value="">Select categories</option>
-                    }
-
-                </select>
+                @Html.LabelFor(model => model.SelectedCategoryIds, "Categories")
+                <div>
+                    @Html.ListBoxFor(m => m.SelectedCategoryIds, new MultiSelectList(Model.Categories, "Id", "Name"), new { @style = "width:200px;" })
+                    @* @Html.ListBoxFor(x => x.SelectedTeaIds, Model.TeaList, new { style = "width:200px" }) *@
+                    @* @Html.ListBoxFor(x => x.Categories, Model.Categories, new { style = "width:200px" }) *@
+                </div>
+                @* @Html.ValidationMessageFor(model => model.Categories, "", new { @class = "text-danger" }) *@
             </div>
 
             <div class="form-group">
@@ -48,6 +47,13 @@
                 <input type="number" asp-for="Price" class="form-control" required>
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
+
+            <div class="form-group">
+                <label asp-for="Quantity">Quantity</label>
+                <input type="number" asp-for="Quantity" class="form-control" required>
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+
 
             <div class="form-group">
                 <label asp-for="Description">Description</label>

@@ -10,7 +10,7 @@ public class OrderController : Controller
 {
     private readonly UnitOfWork _unit = new UnitOfWork();
 
-    public IActionResult OrderList()
+    public IActionResult Index()
     {
         var orders = _unit.OrderRepository.Get().ToList();
         return View(orders);

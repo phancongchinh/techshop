@@ -3,8 +3,6 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
-// enables Hot reload for development
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
 // authentication handler
@@ -13,7 +11,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     options.LoginPath = new PathString("/Auth/Login");
 });
 // 403 handler for unauthorized requests
-builder.Services.ConfigureApplicationCookie(options => { options.AccessDeniedPath = $"/"; });
+// builder.Services.ConfigureApplicationCookie(options => { options.AccessDeniedPath = "/Auth/AccessDenied" });
 
 
 builder.Services.AddRazorPages().AddRazorPagesOptions(options => options.RootDirectory = "/Views");
