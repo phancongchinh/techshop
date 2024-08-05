@@ -15,17 +15,29 @@ public class Repository<T> : IRepository<T> where T : class
     }
 
     public IEnumerable<T> Get(
-        Expression<Func<T, bool>> filter = null,
-        Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
+        Expression<Func<T, bool>>? filter = null,
+        Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
         string includeProperties = ""
     )
     {
         IQueryable<T> query = _dbSet;
-        query = query.Where(filter);
-        query = includeProperties
-            .Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
-            .Aggregate(query, (current, includeProperty) => current.Include(includeProperty));
-        return orderBy(query).ToList();
+        if (filter != null)
+        {
+            query = query.Where(filter);
+        }
+
+        foreach (var includeProperty in includeProperties.Split
+                     (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+        {
+            query = query.Include(includeProperty);
+        }
+
+        if (orderBy != null)
+        {
+            return orderBy(query).ToList();
+        }
+
+        return query.ToList();
     }
 
     public T? GetById(object id)

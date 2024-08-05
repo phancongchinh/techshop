@@ -1,0 +1,72 @@
+﻿@model Techshop.Models.ViewModels.ProductVm
+
+@{
+    ViewBag.Title = "Backoffice";
+    Layout = "_Layout";
+}
+
+<h2>Add new product</h2>
+
+<div class="container container-fluid">
+
+    <div class="d-flex">
+        <div class="ms-auto">
+            <a asp-area="Backoffice" asp-controller="Product" asp-action="Index" class="btn btn-link">View all products</a>
+        </div>
+    </div>
+
+    <form asp-area="Backoffice" enctype="multipart/form-data" asp-controller="User" asp-action="Info" method="post">
+
+        <div class="d-flex flex-column gap-2">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Brand">Brand</label>
+                <input type="text" asp-for="Brand" class="form-control" required>
+                <span asp-validation-for="Brand" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Model">Model</label>
+                <input type="text" asp-for="Model" class="form-control" required>
+                <span asp-validation-for="Model" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <select class="form-select" multiple>
+                    <option selected>Select categories</option>
+                    @foreach (var c in ViewBag.Categories)
+                    {
+                        <option value="">Select categories</option>
+                    }
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Price">Price</label>
+                <input type="number" asp-for="Price" class="form-control" required>
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Description">Description</label>
+                <input type="text" asp-for="Description" class="form-control" required>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Images">Images</label>
+                <input type="file" multiple asp-for="Images" class="form-control" required>
+                <span asp-validation-for="Images" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mt-3">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+
+        </div>
+
+    </form>
+
+</div>

@@ -48,9 +48,10 @@ namespace Techshop.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Name")
+                    b.Property<string>("Name")
+                        .IsRequired()
                         .HasMaxLength(32)
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(32)");
 
                     b.HasKey("Id");
 

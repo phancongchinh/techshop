@@ -1,0 +1,34 @@
+﻿@model Techshop.Models.Entities.Product
+
+<div class="card m-4" style="width: 270px">
+    <img src="/image/@Html.DisplayFor(model => model.Images.FirstOrDefault().Path)"
+         class="card-img-top" alt="Model picture"/>
+    <div class="card-body">
+        <p class="card-title card-link">
+            <a href="/products/@Html.DisplayFor(model => model.Id)">
+                @Html.DisplayFor(model => model.Name)
+            </a>
+        </p>
+        <p class="card-text">@Html.DisplayFor(model => model.Description)</p>
+        <div class="d-flex align-items-end">
+            <span class="fs-5 card-text text-success">@($"{Model.Price:C}")</span>
+
+            @if (Model.Quantity <= 0)
+            {
+                <span class="text-danger ms-auto">Out of stock</span>
+            }
+            else if (User.Identity.IsAuthenticated)
+            {
+                <form class="ms-auto" method="post"
+                      asp-controller="CartItem" asp-action="UpdateCart"
+                      asp-route-quantity="1" asp-route-productId="@Model.Id"
+                      asp-route-forceUpdateQuantity="false">
+                    <button
+                        class="btn btn-sm btn-success px-3">
+                        + <i class="fa fa-shopping-cart"></i>
+                    </button>
+                </form>
+            }
+        </div>
+    </div>
+</div>

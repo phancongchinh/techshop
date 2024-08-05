@@ -4,9 +4,19 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
-builder.Services.AddRazorPages().AddRazorPagesOptions(options => options.RootDirectory = "/Views");
+// enables Hot reload for development
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
+// authentication handler
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+{
+    options.LoginPath = new PathString("/Auth/Login");
+});
+// 403 handler for unauthorized requests
+builder.Services.ConfigureApplicationCookie(options => { options.AccessDeniedPath = $"/"; });
+
+
+builder.Services.AddRazorPages().AddRazorPagesOptions(options => options.RootDirectory = "/Views");
 
 var app = builder.Build();
 
@@ -26,11 +36,12 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-app.MapControllerRoute(
     name: "areas",
     pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+);
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}"
 );
 
 app.MapRazorPages();

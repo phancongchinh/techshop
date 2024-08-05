@@ -1,12 +1,14 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Techshop.Models;
+using Techshop.Repository;
 
 namespace Techshop.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly UnitOfWork _unit = new UnitOfWork();
 
     public HomeController(ILogger<HomeController> logger)
     {
@@ -15,7 +17,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        var products = _unit.ProductRepository.Get(includeProperties: "Images").ToList();
+        return View(products);
     }
 
     public IActionResult Privacy()

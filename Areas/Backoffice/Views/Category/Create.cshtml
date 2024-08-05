@@ -1,0 +1,28 @@
+﻿@model Techshop.Models.Entities.Category
+
+@{
+    ViewBag.Title = "Backoffice";
+    Layout = "_Layout";
+}
+
+<h2>Add new category</h2>
+
+<div class="container container-fluid">
+    <div class="row mt-4">
+        <div class="col-4">
+            <form asp-action="Create" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="Name">Name</label>
+                    <input type="text" asp-for="Name" class="form-control" required>
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mt-3">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

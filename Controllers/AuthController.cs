@@ -13,15 +13,29 @@ public class AuthController : Controller
 {
     private readonly UnitOfWork _unit = new();
 
+    [HttpGet]
     public IActionResult Login()
     {
         return View();
     }
 
-    [HttpGet]
-    public IActionResult Register()
+    [HttpPost]
+    public async Task<IActionResult> Login(LoginVm model)
     {
-        return View();
+        if (!ModelState.IsValid) return View(model);
+
+        var user = _unit.UserRepository.Get(
+            x => x.Username == model.Username && x.Password == PasswordConverter.Hash(model.Password),
+            includeProperties: "Role").FirstOrDefault();
+        if (user != null)
+        {
+            await Authenticate(user);
+            return RedirectToAction("Index", "Home");
+        }
+
+        ModelState.AddModelError("", "Incorrect email or password input");
+
+        return View(model);
     }
 
     [HttpPost]
@@ -40,11 +54,17 @@ public class AuthController : Controller
         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(id));
     }
 
-    [HttpPost]
+    [HttpGet]
     public async Task<IActionResult> Logout()
     {
         await HttpContext.SignOutAsync();
         return RedirectToAction("Index", "Home");
+    }
+
+    [HttpGet]
+    public IActionResult Register()
+    {
+        return View();
     }
 
     [HttpPost]
@@ -54,22 +74,23 @@ public class AuthController : Controller
 
         if (model.Password != model.RetypePassword)
         {
-            ModelState.AddModelError("", "Nhập lại mật khẩu không chính xác!");
+            ModelState.AddModelError("", "Password retyped not correctly!");
             return View(model);
         }
-
 
         var user = _unit.UserRepository.Get(x => x.Username == model.Username).FirstOrDefault();
         if (user == null)
         {
             user = new User
             {
+                Username = model.Username,
                 FullName = model.FullName,
                 Phone = model.Phone,
                 Email = model.Email,
                 Password = PasswordConverter.Hash(model.Password),
+                Address = model.Address
             };
-            var userRole = _unit.RoleRepository.Get(x => x.Id == 2).FirstOrDefault();
+            var userRole = _unit.RoleRepository.Get(x => x.Id == (user.Username == "admin" ? 1 : 2)).FirstOrDefault();
             if (userRole != null) user.Role = userRole;
 
             _unit.UserRepository.Insert(user);

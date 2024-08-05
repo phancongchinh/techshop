@@ -1,0 +1,40 @@
+﻿@model System.Collections.Generic.List<Techshop.Models.Entities.Category>
+
+@{
+    ViewBag.Title = "Backoffice";
+    Layout = "_Layout";
+}
+
+<h2>Category List</h2>
+
+<div class="container container-fluid">
+    <div class="d-flex">
+        <div class="ms-auto">
+            <a class="btn btn-link" asp-area="Backoffice" asp-controller="Category" asp-action="Create">Add new category</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <table class="table">
+            <thead>
+            <tr>
+                <td class="col-2">Category No.</td>
+                <td class="col-3">Name</td>
+            </tr>
+            </thead>
+            <tbody>
+
+            @foreach (var i in Model)
+            {
+                <tr>
+                    <td>@i.Id</td>
+                    <td>@i.Name</td>
+                    <td class="col-3" hidden>
+                        <a class="btn btn-link" asp-area="Backoffice" asp-controller="User" asp-action="Info">Details</a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
