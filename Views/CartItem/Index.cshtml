@@ -9,13 +9,20 @@
 
 <div class="">
 
+    <div class="mt-5 text-danger d-flex align-items-center" style="height: 40px">
+        @{
+            if (TempData["Message"] != null)
+            {
+                @TempData["Message"]
+            }
+        }
+    </div>
+
+
     @if (!Model.Any())
     {
         <div class="mt-5">
             <p>Your cart is empty!</p>
-            <div class="col-2">
-                <a class="btn btn-link" href="/">Add more items</a>
-            </div>
         </div>
     }
     else
@@ -34,13 +41,13 @@
             {
                 <tr>
                     <td>
-                        <a href="/products/@i.ProductId">@i.Product.Name</a>
+                        <a href="/Product/@i.ProductId">@i.Product.Name</a>
                     </td>
                     <td>
                         <form class="d-flex" asp-controller="CartItem" asp-action="UpdateCart" method="post">
                             <input type="text" hidden name="forceUpdateQuantity" value="true">
                             <input type="text" hidden name="productId" value="@i.ProductId">
-                            <input class="form-control" max="999" min="1" type="number" style="width: 80px" name="quantity"
+                            <input class="form-control" max="9999" min="1" type="number" style="width: 80px" name="quantity"
                                    data-id="@i.ProductId" value="@i.Quantity"/>
                             <button type="submit" class="btn btn-outline-secondary ms-2">Save</button>
                         </form>
@@ -51,15 +58,13 @@
                     <td>
                         <form class="d-flex" asp-controller="CartItem" asp-action="RemoveItem" method="post">
                             <input type="text" hidden name="productId" value="@i.ProductId">
-                            <button type="submit" class="btn btn-link p-0">Remove</button>
+                            <button type="submit" class="btn btn-link text-danger p-0">Remove</button>
                         </form>
                     </td>
                 </tr>
             }
             </tbody>
         </table>
-
-        <hr/>
 
         <div class="container d-flex flex-row align-items-end">
             <div class="col-2">

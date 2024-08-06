@@ -27,6 +27,12 @@ public class CartItemController : Controller
 
         if (product == null) return NotFound();
 
+        if (quantity > product.Quantity)
+        {
+            TempData["Message"] = "You can not order that much!";
+            return RedirectToAction("Index", "CartItem");
+        }
+
         var item = _unit.CartItemRepository
             .Get(x => x.User.Username == User.Identity.Name && x.ProductId == productId,
                 includeProperties: "User").FirstOrDefault();
@@ -56,13 +62,17 @@ public class CartItemController : Controller
     [HttpPost]
     public IActionResult RemoveItem(int productId)
     {
-        var shoppingCartItem = _unit.CartItemRepository
-            .Get(x => x.User.Email == User.Identity.Name && x.ProductId == productId,
+        var cartItem = _unit.CartItemRepository
+            .Get(x => x.User.Username == User.Identity.Name && x.ProductId == productId,
                 includeProperties: "User").FirstOrDefault();
 
-        if (shoppingCartItem == null) return RedirectToAction("Index", "CartItem");
+        if (cartItem == null)
+        {
+            TempData["Message"] = "Item not valid!";
+            return RedirectToAction("Index", "CartItem");
+        }
 
-        _unit.CartItemRepository.Delete(shoppingCartItem);
+        _unit.CartItemRepository.Delete(cartItem);
         _unit.Save();
 
         return RedirectToAction("Index", "CartItem");

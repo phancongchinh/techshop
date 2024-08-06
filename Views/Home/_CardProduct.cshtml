@@ -1,23 +1,24 @@
 ﻿@model Techshop.Models.Entities.Product
 
-<div class="card m-4" style="width: 270px">
-    <img src="/image/@Html.DisplayFor(model => model.Images.FirstOrDefault().Path)"
+<div class="card shadow" style="width: 270px">
+    <img src="/uploads/images/@Html.DisplayFor(model => model.Images.FirstOrDefault().Path)"
          class="card-img-top" alt="Model picture"/>
+
     <div class="card-body">
         <p class="card-title card-link">
-            <a href="/products/@Html.DisplayFor(model => model.Id)">
+            <a href="/Product/@Html.DisplayFor(model => model.Id)">
                 @Html.DisplayFor(model => model.Name)
             </a>
         </p>
         <p class="card-text">@Html.DisplayFor(model => model.Description)</p>
         <div class="d-flex align-items-end">
-            <span class="fs-5 card-text text-success">@($"{Model.Price:C}")</span>
+            <span class="fs-5 card-text text-success">@($"{Model.Price}")</span>
 
             @if (Model.Quantity <= 0)
             {
                 <span class="text-danger ms-auto">Out of stock</span>
             }
-            else if (User.Identity.IsAuthenticated)
+            else if (User.Identity is { IsAuthenticated: true })
             {
                 <form class="ms-auto" method="post"
                       asp-controller="CartItem" asp-action="UpdateCart"

@@ -9,9 +9,9 @@
     <div class="mb-3 w-100">
         <form asp-controller="Product" asp-action="Search">
             <div class="input-group">
-            <span class="input-group-text" id="inputGroup-sizing-default">
-                <i class="fa fa-search"></i>
-            </span>
+                <span class="input-group-text" id="inputGroup-sizing-default">
+                    <i class="fa fa-search"></i>
+                </span>
                 <input type="text" class="form-control" placeholder="What are you looking for... ">
             </div>
         </form>
@@ -42,19 +42,20 @@
         </button>
     </div>
 
-
-    @if (!Model.Any())
-    {
-        <div>
-            You webpage seems to have no product yet!
-        </div>
-    }
-    else
-    {
-        @foreach (var i in Model)
+    <div class="mt-4 d-flex flex-wrap gap-2 flex-grow-1 flex-shrink-1">
+        @if (!Model.Any())
         {
-            @await Html.PartialAsync("_CardProduct", i)
+            <div>
+                You webpage seems to have no product yet!
+            </div>
         }
-    }
+        else
+        {
+            @foreach (var i in Model)
+            {
+                @await Html.PartialAsync("_CardProduct", i)
+            }
+        }
+    </div>
 
 </div>
