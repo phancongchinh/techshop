@@ -17,7 +17,7 @@
         </form>
     </div>
 
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide shadow" data-bs-ride="carousel">
         <div class="carousel-inner rounded">
             <div class="carousel-item active">
                 <img src="@Url.Content("images/banner1.png")" class="d-block w-100" style="height: 375px" alt="banner1">
@@ -42,7 +42,9 @@
         </button>
     </div>
 
-    <div class="mt-4 d-flex flex-wrap gap-2 flex-grow-1 flex-shrink-1">
+    <div class="mt-4 row">
+
+
         @if (!Model.Any())
         {
             <div>
@@ -53,7 +55,9 @@
         {
             @foreach (var i in Model)
             {
-                @await Html.PartialAsync("_CardProduct", i)
+                <div class="mt-2 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                    @await Html.PartialAsync("_CardProduct", i)
+                </div>
             }
         }
     </div>

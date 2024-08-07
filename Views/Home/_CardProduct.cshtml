@@ -1,19 +1,26 @@
 ﻿@model Techshop.Models.Entities.Product
 
-<div class="card shadow" style="width: 270px">
-    <img src="/uploads/images/@Html.DisplayFor(model => model.Images.FirstOrDefault().Path)"
-         class="card-img-top" alt="Model picture"/>
+<div class="card shadow">
+    <div class="p-2">
+        <img src="/uploads/images/@Html.DisplayFor(model => model.Images.FirstOrDefault().Path)"
+             class="card-img-top" alt="#"/>
+    </div>
 
-    <div class="card-body">
-        <p class="card-title card-link">
-            <a href="/Product/@Html.DisplayFor(model => model.Id)">
+    <div class="card-body d-flex flex-column">
+        <p class="w-100 fs-6">
+            <a href="/Product/@Html.DisplayFor(model => model.Id)"
+               class="d-block"
+               style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden">
                 @Html.DisplayFor(model => model.Name)
             </a>
         </p>
-        <p class="card-text">@Html.DisplayFor(model => model.Description)</p>
-        <div class="d-flex align-items-end">
-            <span class="fs-5 card-text text-success">@($"{Model.Price}")</span>
 
+        <p class="card-text w-100 small text-muted mt-auto" style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden">
+            @Html.DisplayFor(model => model.Description)
+        </p>
+
+        <div class="d-flex align-items-end">
+            <span class="fs-5 card-text text-success">@($"{Model.Price:C0}")</span>
             @if (Model.Quantity <= 0)
             {
                 <span class="text-danger ms-auto">Out of stock</span>
@@ -21,8 +28,10 @@
             else if (User.Identity is { IsAuthenticated: true })
             {
                 <form class="ms-auto" method="post"
-                      asp-controller="CartItem" asp-action="UpdateCart"
-                      asp-route-quantity="1" asp-route-productId="@Model.Id"
+                      asp-controller="CartItem"
+                      asp-action="UpdateCart"
+                      asp-route-quantity="1"
+                      asp-route-productId="@Model.Id"
                       asp-route-forceUpdateQuantity="false">
                     <button
                         class="btn btn-sm btn-success px-3">

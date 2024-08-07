@@ -13,13 +13,13 @@
         <table class="table">
             <thead>
             <tr>
-                <td class="col-2">User No.</td>
-                <td class="col-3">Username</td>
-                <td class="col-3">Fullname</td>
+                <td class="col-1">User No.</td>
+                <td class="col-2">Username</td>
+                <td class="col-2">Fullname</td>
                 <td class="col-2">Phone</td>
-                <td class="col-2">Address</td>
+                <td class="col-3">Address</td>
                 <td class="col-2">Role</td>
-                <td class="col-2"></td>
+                @* <td class="col-2"></td> *@
             </tr>
             </thead>
             <tbody>
@@ -28,7 +28,15 @@
             {
                 <tr>
                     <td>@i.Id</td>
-                    <td>@i.Username</td>
+                    <td>
+                        <a class="btn btn-link" 
+                           asp-area="Backoffice" 
+                           asp-controller="User" 
+                           asp-action="Info" 
+                           asp-route-id="@i.Id">
+                            @i.Username
+                        </a>
+                    </td>
                     <td>@i.FullName</td>
                     <td>@i.Phone</td>
                     <td>@i.Address</td>

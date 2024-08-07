@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rU9ewoaXDs+brLH/IE/4tG6XQchYWk5jQ9AMB+RF930=",
+  "Hash": "OJLdu6n6qniVgb0MIsdTVoxM1fq8Co2izr4T0rfVY5M=",
   "Source": "Techshop",
   "BasePath": "_content/Techshop",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Techshop\\wwwroot",
       "Source": "Techshop",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\_EHOU\\techshop\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Techshop.styles.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Techshop.styles.css",
       "SourceId": "Techshop",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\_EHOU\\techshop\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "Techshop.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\_EHOU\\techshop\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Techshop.styles.css"
+      "OriginalItemSpec": "D:\\_EHOU\\Techshop\\Techshop\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Techshop.styles.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Techshop.bundle.scp.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Techshop.bundle.scp.css",
       "SourceId": "Techshop",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\_EHOU\\techshop\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "Techshop.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\_EHOU\\techshop\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Techshop.bundle.scp.css"
+      "OriginalItemSpec": "D:\\_EHOU\\Techshop\\Techshop\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Techshop.bundle.scp.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\css\\site.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\css\\site.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\favicon.ico",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\favicon.ico",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\images\\banner1.png",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\images\\banner1.png",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "images/banner1.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner1.png"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\images\\banner2.png",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\images\\banner2.png",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "images/banner2.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner2.png"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\images\\banner3.png",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\images\\banner3.png",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "images/banner3.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner3.png"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\images\\banner4.png",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\images\\banner4.png",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "images/banner4.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner4.png"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\js\\site.js",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\js\\site.js",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1139,10 +1139,95 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\uploads\\images\\46d3f7a8-59a6-46d6-9c9c-51688961aaad_2.png",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\0639901e-0eb3-4b47-965f-ca7fdad71a52_2.png",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/0639901e-0eb3-4b47-965f-ca7fdad71a52_2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\0639901e-0eb3-4b47-965f-ca7fdad71a52_2.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\16145211-ed61-4d5e-aed7-e9f050bf09a6_2.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/16145211-ed61-4d5e-aed7-e9f050bf09a6_2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\16145211-ed61-4d5e-aed7-e9f050bf09a6_2.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\17a977f6-1e80-4324-bd7d-809ab204a057_6.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/17a977f6-1e80-4324-bd7d-809ab204a057_6.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\17a977f6-1e80-4324-bd7d-809ab204a057_6.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\3833e9e2-30b4-4504-bfc9-136a98590ad7_6.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/3833e9e2-30b4-4504-bfc9-136a98590ad7_6.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\3833e9e2-30b4-4504-bfc9-136a98590ad7_6.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\3b5b1c24-aa19-4801-a0e1-702b2d40064e_5.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/3b5b1c24-aa19-4801-a0e1-702b2d40064e_5.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\3b5b1c24-aa19-4801-a0e1-702b2d40064e_5.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\46d3f7a8-59a6-46d6-9c9c-51688961aaad_2.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "uploads/images/46d3f7a8-59a6-46d6-9c9c-51688961aaad_2.png",
       "AssetKind": "All",
@@ -1156,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\images\\46d3f7a8-59a6-46d6-9c9c-51688961aaad_2.png"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\uploads\\images\\4d28a7dc-f2be-462f-b8b3-00cb10d87196_1.png",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\4d28a7dc-f2be-462f-b8b3-00cb10d87196_1.png",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "uploads/images/4d28a7dc-f2be-462f-b8b3-00cb10d87196_1.png",
       "AssetKind": "All",
@@ -1173,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\images\\4d28a7dc-f2be-462f-b8b3-00cb10d87196_1.png"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\uploads\\images\\57e96e14-05f5-4cf3-91a7-79e999334f20_1.png",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\57e96e14-05f5-4cf3-91a7-79e999334f20_1.png",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "uploads/images/57e96e14-05f5-4cf3-91a7-79e999334f20_1.png",
       "AssetKind": "All",
@@ -1190,10 +1275,95 @@
       "OriginalItemSpec": "wwwroot\\uploads\\images\\57e96e14-05f5-4cf3-91a7-79e999334f20_1.png"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\uploads\\images\\7dadb0ec-2337-4316-8d0c-9787e127d769_2.png",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\5996389b-87d9-42b8-85b3-7edb9d516558_3.png",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/5996389b-87d9-42b8-85b3-7edb9d516558_3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\5996389b-87d9-42b8-85b3-7edb9d516558_3.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\5efa1b34-d408-4c64-990d-3a42eada4e38_3.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/5efa1b34-d408-4c64-990d-3a42eada4e38_3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\5efa1b34-d408-4c64-990d-3a42eada4e38_3.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\674f6259-752f-40cd-bdb0-7516302d2a1d_4.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/674f6259-752f-40cd-bdb0-7516302d2a1d_4.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\674f6259-752f-40cd-bdb0-7516302d2a1d_4.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\6d4be53e-2ee0-4ebd-b597-63517e6ac95e_1.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/6d4be53e-2ee0-4ebd-b597-63517e6ac95e_1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\6d4be53e-2ee0-4ebd-b597-63517e6ac95e_1.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\777522e1-b076-41d6-93c2-ddf29b8df527_5.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/777522e1-b076-41d6-93c2-ddf29b8df527_5.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\777522e1-b076-41d6-93c2-ddf29b8df527_5.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\7dadb0ec-2337-4316-8d0c-9787e127d769_2.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "uploads/images/7dadb0ec-2337-4316-8d0c-9787e127d769_2.png",
       "AssetKind": "All",
@@ -1207,10 +1377,44 @@
       "OriginalItemSpec": "wwwroot\\uploads\\images\\7dadb0ec-2337-4316-8d0c-9787e127d769_2.png"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\uploads\\images\\90fe16d0-639a-4719-8f97-c507bd502529_2.png",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\7e6297a2-ddc8-42c6-a56f-ad9a96438220_6.png",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/7e6297a2-ddc8-42c6-a56f-ad9a96438220_6.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\7e6297a2-ddc8-42c6-a56f-ad9a96438220_6.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\88f176b3-7f63-4d1d-bdd1-2d4bd94309e2_4.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/88f176b3-7f63-4d1d-bdd1-2d4bd94309e2_4.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\88f176b3-7f63-4d1d-bdd1-2d4bd94309e2_4.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\90fe16d0-639a-4719-8f97-c507bd502529_2.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "uploads/images/90fe16d0-639a-4719-8f97-c507bd502529_2.png",
       "AssetKind": "All",
@@ -1224,10 +1428,44 @@
       "OriginalItemSpec": "wwwroot\\uploads\\images\\90fe16d0-639a-4719-8f97-c507bd502529_2.png"
     },
     {
-      "Identity": "D:\\_EHOU\\techshop\\wwwroot\\uploads\\images\\9fc2fcfd-05b6-4ac1-a9c8-4440f1389562_1.png",
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\9641e3b2-82ad-4d03-85f2-fbf659185709_3.png",
       "SourceId": "Techshop",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\_EHOU\\techshop\\wwwroot\\",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/9641e3b2-82ad-4d03-85f2-fbf659185709_3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\9641e3b2-82ad-4d03-85f2-fbf659185709_3.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\9eec711c-fc18-4ba0-8c64-c2954dc91e28_2.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/9eec711c-fc18-4ba0-8c64-c2954dc91e28_2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\9eec711c-fc18-4ba0-8c64-c2954dc91e28_2.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\9fc2fcfd-05b6-4ac1-a9c8-4440f1389562_1.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
       "BasePath": "_content/Techshop",
       "RelativePath": "uploads/images/9fc2fcfd-05b6-4ac1-a9c8-4440f1389562_1.png",
       "AssetKind": "All",
@@ -1239,6 +1477,74 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\images\\9fc2fcfd-05b6-4ac1-a9c8-4440f1389562_1.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\b1a1841e-cdd3-4485-93db-882a3ca04bcd_1.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/b1a1841e-cdd3-4485-93db-882a3ca04bcd_1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\b1a1841e-cdd3-4485-93db-882a3ca04bcd_1.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\c2a35cdc-8145-4427-880b-8e00ed810262_5.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/c2a35cdc-8145-4427-880b-8e00ed810262_5.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\c2a35cdc-8145-4427-880b-8e00ed810262_5.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\c66f1283-9474-47aa-8bb7-14bc0a89d841_5.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/c66f1283-9474-47aa-8bb7-14bc0a89d841_5.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\c66f1283-9474-47aa-8bb7-14bc0a89d841_5.png"
+    },
+    {
+      "Identity": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\uploads\\images\\e228853d-eaf2-4c52-aa39-4ec92402441f_1.png",
+      "SourceId": "Techshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_EHOU\\Techshop\\Techshop\\wwwroot\\",
+      "BasePath": "_content/Techshop",
+      "RelativePath": "uploads/images/e228853d-eaf2-4c52-aa39-4ec92402441f_1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\e228853d-eaf2-4c52-aa39-4ec92402441f_1.png"
     }
   ]
 }

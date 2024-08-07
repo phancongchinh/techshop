@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\_EHOU\\techshop\\Techshop.csproj": {}
+    "D:\\_EHOU\\Techshop\\Techshop\\Techshop.csproj": {}
   },
   "projects": {
-    "D:\\_EHOU\\techshop\\Techshop.csproj": {
+    "D:\\_EHOU\\Techshop\\Techshop\\Techshop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_EHOU\\techshop\\Techshop.csproj",
+        "projectUniqueName": "D:\\_EHOU\\Techshop\\Techshop\\Techshop.csproj",
         "projectName": "Techshop",
-        "projectPath": "D:\\_EHOU\\techshop\\Techshop.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\_EHOU\\techshop\\obj\\",
+        "projectPath": "D:\\_EHOU\\Techshop\\Techshop\\Techshop.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\_EHOU\\Techshop\\Techshop\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +43,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "DataAnnotationsExtensions": {
+              "target": "Package",
+              "version": "[5.0.1.27, )"
+            },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[5.0.17, )"
@@ -78,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

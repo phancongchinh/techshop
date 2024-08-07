@@ -1,0 +1,122 @@
+﻿@model Techshop.Models.Entities.Product
+
+@{
+    ViewBag.Title = "Product";
+    Layout = "_Layout";
+}
+
+<h2>Product's info</h2>
+
+<div class="container">
+    <h5 class="mt-5">@Model.Name</h5>
+
+    <div class="w-100 mt-5 row">
+
+        <div class="col" style="max-width: 420px">
+
+            <div id="carouselExampleControls" class="carousel slide shadow rounded p-3" data-bs-ride="carousel">
+                <div class="carousel-inner rounded">
+                    @{
+                        var first = Model.Images.FirstOrDefault().Id;
+                    }
+                    @foreach (var i in Model.Images)
+                    {
+                        if (i.Id == first)
+                        {
+                            <div class="carousel-item active">
+                                <img src="/uploads/images/@Url.Content(i.Path)">
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="carousel-item">
+                                <img src="/uploads/images/@Url.Content(i.Path)">
+                            </div>
+                        }
+                    }
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+            <div class="mt-4 d-flex flex-row gap-2 justify-content-center">
+                @for (var i = 0; i < Model.Images.Count; i++)
+                {
+                    <div class="border p-2 rounded">
+                        <img src="/uploads/images/@Html.DisplayFor(model => model.Images.ElementAtOrDefault(i).Path)"
+                             style="width: 110px; height: 110px"
+                             alt=""/>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="col d-flex flex-column py-2 px-4">
+
+            <div class="row my-2">
+                <div class="col-2">Brand</div>
+                <div class="col-10">@Model.Brand</div>
+            </div>
+
+            <div class="row my-2">
+                <div class="col-2">Model</div>
+                <div class="col-10">@Model.Model</div>
+            </div>
+
+            <div class="row my-2">
+                <div class="col-2">Price</div>
+                <div class="col-10 text-success">$ @Model.Price</div>
+            </div>
+
+            <div class="row my-2">
+                <div class="col-2">Stock</div>
+                @if (Model.Quantity > 0)
+                {
+                    <div class="col-10 text-success">@Model.Quantity</div>
+                }
+                else
+                {
+                    <div class="col-10 text-danger">Out of stock</div>
+                }
+            </div>
+
+            <div class="row my-2">
+                <div class="col-2"></div>
+                <div class="col-10">
+                    @if (User.Identity is { IsAuthenticated: true })
+                    {
+                        if (Model.Quantity > 0)
+                        {
+                            <form class="" method="post"
+                                  asp-controller="CartItem" asp-action="UpdateCart"
+                                  asp-route-quantity="1" asp-route-productId="@Model.Id" asp-route-forceUpdateQuantity="false">
+                                <button class="btn btn-sm btn-success px-3" disabled>
+                                    Add to cart <i class="ms-2 fa fa-shopping-cart"></i>
+                                </button>
+                            </form>
+                        }
+                        else
+                        {
+                            <button class="btn btn-sm btn-secondary px-3" disabled>
+                                Add to cart <i class="ms-2 fa fa-shopping-cart"></i>
+                            </button>
+                        }
+                    }
+                </div>
+
+            </div>
+
+            <div class="row mt-auto">
+                <div class="col-2">Description</div>
+                <div class="col-10">@Model.Description</div>
+            </div>
+        </div>
+    </div>
+</div>

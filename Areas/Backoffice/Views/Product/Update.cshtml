@@ -1,0 +1,84 @@
+﻿@model Techshop.Models.ViewModels.ProductVm
+
+@{
+    ViewBag.Title = "Backoffice";
+    Layout = "_BackofficeLayout";
+}
+
+<h2>Update product</h2>
+
+<div class="">
+
+    <div class="mt-5 text-danger d-flex align-items-center" style="height: 40px">
+        <div>
+            @{
+                if (TempData["Message"] != null)
+                {
+                    @TempData["Message"]
+                }
+            }
+        </div>
+
+        <div class="ms-auto">
+            <a class="btn btn-link" asp-area="Backoffice" asp-controller="Product" asp-action="Index">View all products</a>
+        </div>
+    </div>
+
+    <form enctype="multipart/form-data" asp-area="Backoffice" asp-controller="Product" asp-action="Update" method="post">
+
+        <div class="d-flex flex-column gap-2">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Brand">Brand</label>
+                <input type="text" asp-for="Brand" class="form-control">
+                <span asp-validation-for="Brand" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Model">Model</label>
+                <input type="text" asp-for="Model" class="form-control">
+                <span asp-validation-for="Model" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.SelectedCategoryIds, "Categories")
+                <div>
+                    @Html.ListBoxFor(m => m.SelectedCategoryIds, new MultiSelectList(Model.Categories, "Id", "Name"), new { @style = "width:300px;" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Price">Price</label>
+                <input type="number" asp-for="Price" class="form-control" required>
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Quantity">Quantity</label>
+                <input type="number" asp-for="Quantity" class="form-control" required>
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="Description">Description</label>
+                <input type="textarea" asp-for="Description" class="form-control" required>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Images">Images</label>
+                <input type="file" multiple asp-for="Images" class="form-control">
+                <span asp-validation-for="Images" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mt-3">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+
+        </div>
+
+    </form>
+
+</div>

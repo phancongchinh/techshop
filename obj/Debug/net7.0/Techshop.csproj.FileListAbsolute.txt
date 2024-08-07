@@ -809,3 +809,5 @@ D:\_EHOU\techshop\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resourc
 D:\_EHOU\techshop\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 D:\_EHOU\techshop\obj\Debug\net7.0\Techshop.MvcApplicationPartsAssemblyInfo.cs
 D:\_EHOU\techshop\obj\Debug\net7.0\scopedcss\Views\Shared\_BackofficeLayout.cshtml.rz.scp.css
+D:\_EHOU\Techshop\Techshop\obj\Debug\net7.0\scopedcss\Views\Shared\_BackofficeLayout.cshtml.rz.scp.css
+D:\_EHOU\Techshop\Techshop\bin\Debug\net7.0\DataAnnotationsExtensions.dll

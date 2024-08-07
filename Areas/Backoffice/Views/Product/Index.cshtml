@@ -8,7 +8,17 @@
 <h2>Product List</h2>
 
 <div>
-    <div class="d-flex">
+
+    <div class="mt-5 text-danger d-flex align-items-center" style="height: 40px">
+        <div>
+            @{
+                if (TempData["Message"] != null)
+                {
+                    @TempData["Message"]
+                }
+            }
+        </div>
+
         <div class="ms-auto">
             <a class="btn btn-link" asp-area="Backoffice" asp-controller="Product" asp-action="Create">Add new product</a>
         </div>
@@ -18,11 +28,13 @@
         <table class="table">
             <thead>
             <tr>
-                <td class="col-2">Product No.</td>
-                <td class="col-3">Brand</td>
-                <td class="col-3">Name</td>
-                <td class="col-2">Quantity</td>
-                <td class="col-2"></td>
+                <td class="col-1">No.</td>
+                <td class="col-1">Image</td>
+                <td class="col-1">Brand</td>
+                <td class="col-2">Model</td>
+                <td class="col-1">Price</td>
+                <td class="col-1">Quantity</td>
+                <td class="col-1"></td>
             </tr>
             </thead>
             <tbody>
@@ -31,12 +43,23 @@
             {
                 <tr>
                     <td>@i.Id</td>
+                    <td>
+                        <img src="/uploads/images/@Url.Content(i.Images.FirstOrDefault()?.Path)"
+                             style="width: 40px"
+                             alt="#">
+                    </td>
                     <td>@i.Brand</td>
                     <td>@i.Model</td>
                     <td>@i.Price</td>
                     <td>@i.Quantity</td>
-                    <td class="col-3">
-                        <a class="btn btn-link" asp-area="Backoffice" asp-controller="User" asp-action="Info">Details</a>
+                    <td>
+                        <a class="btn btn-link"
+                           asp-area="Backoffice"
+                           asp-controller="Product"
+                           asp-action="Update"
+                           asp-route-id="@i.Id">
+                            Details
+                        </a>
                     </td>
                 </tr>
             }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Techshop.Models.ViewModels;
 using Techshop.Repository;
 
 namespace Techshop.Areas.Backoffice.Controllers;
@@ -14,5 +15,21 @@ public class UserController : Controller
     {
         var users = _unit.UserRepository.Get(includeProperties: "Role").ToList();
         return View(users);
+    }
+
+    public IActionResult Info(int id)
+    {
+        var user = _unit.UserRepository.Get(e => e.Id == id).FirstOrDefault();
+        if (user == null) return NotFound();
+
+        var model = new UserUpdateVm()
+        {
+            FullName = user.FullName,
+            Phone = user.Phone,
+            Email = user.Email,
+            Address = user.Address
+        };
+
+        return View(model);
     }
 }

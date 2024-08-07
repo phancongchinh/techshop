@@ -9,9 +9,18 @@
 
 <div class="">
 
-    <div class="d-flex">
+    <div class="mt-5 text-danger d-flex align-items-center" style="height: 40px">
+        <div>
+            @{
+                if (TempData["Message"] != null)
+                {
+                    @TempData["Message"]
+                }
+            }
+        </div>
+
         <div class="ms-auto">
-            <a asp-area="Backoffice" asp-controller="Product" asp-action="Index" class="btn btn-link">View all products</a>
+            <a class="btn btn-link" asp-area="Backoffice" asp-controller="Product" asp-action="Index">View all products</a>
         </div>
     </div>
 
@@ -22,13 +31,13 @@
 
             <div class="form-group">
                 <label asp-for="Brand">Brand</label>
-                <input type="text" asp-for="Brand" class="form-control" required>
+                <input type="text" asp-for="Brand" class="form-control">
                 <span asp-validation-for="Brand" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="Model">Model</label>
-                <input type="text" asp-for="Model" class="form-control" required>
+                <input type="text" asp-for="Model" class="form-control">
                 <span asp-validation-for="Model" class="text-danger"></span>
             </div>
 

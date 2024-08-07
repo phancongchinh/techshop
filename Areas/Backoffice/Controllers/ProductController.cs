@@ -22,7 +22,7 @@ public class ProductController : Controller
 
     public IActionResult Index()
     {
-        var products = _unit.ProductRepository.Get().ToList();
+        var products = _unit.ProductRepository.Get(includeProperties: "Images").ToList();
         return View(products);
     }
 
@@ -59,7 +59,7 @@ public class ProductController : Controller
         _unit.Save();
 
         var files = HttpContext.Request.Form.Files;
-        
+
         if (files.Count > 0)
         {
             foreach (var item in files)
@@ -76,23 +76,24 @@ public class ProductController : Controller
                 //add product Image for new product
 
                 var image = new Image { Path = dynamicFileName, ProductId = product.Id };
-                
+
                 _unit.ImageRepository.Insert(image);
-                // product.Images.Add(new Image { Path = dynamicFileName });
             }
         }
-        
+
         _unit.Save();
-        
-        return View("Index");
+
+        return RedirectToAction("Index", "Product");
     }
 
     [HttpGet]
-    public IActionResult ProductInfo(int id)
+    public IActionResult Update(int id)
     {
         var product = _unit.ProductRepository.Get(x => x.Id == id, includeProperties: "Images,Categories")
             .FirstOrDefault();
         if (product == null) return NotFound();
+
+        var categories = _unit.CategoryRepository.Get().ToList();
 
         var productVm = new ProductVm()
         {
@@ -101,28 +102,63 @@ public class ProductController : Controller
             Price = product.Price,
             Description = product.Description,
             Quantity = product.Quantity,
+            Categories = categories,
+            SelectedCategoryIds = product.Categories.Select(c => c.Id).ToArray()
         };
 
         return View(productVm);
     }
 
     [HttpPost]
-    public IActionResult ProductInfo(int id, ProductVm productVm)
+    public IActionResult Update(int id, ProductVm productVm)
     {
-        if (!ModelState.IsValid) return View(productVm);
-        var product = _unit.ProductRepository.Get(x => x.Id == id, includeProperties: "Images,Categories")
-            .FirstOrDefault();
+        // if (!ModelState.IsValid) return View(productVm);
+        var product = _unit.ProductRepository.Get(x => x.Id == id, includeProperties: "Categories").FirstOrDefault();
         if (product == null) return NotFound();
+
+        var categories = _unit.CategoryRepository.Get(e => productVm.SelectedCategoryIds.Contains(e.Id)).ToList();
 
         product.Brand = productVm.Brand;
         product.Model = productVm.Model;
         product.Price = productVm.Price;
         product.Description = productVm.Description;
         product.Quantity = productVm.Quantity;
+        product.Categories = categories;
 
         _unit.ProductRepository.Update(product);
         _unit.Save();
 
-        return View();
+        var files = HttpContext.Request.Form.Files;
+
+        if (files.Count > 0)
+        {
+            var oldImages = _unit.ImageRepository.Get(e => e.ProductId == product.Id).ToList();
+            foreach (var image in oldImages)
+            {
+                _unit.ImageRepository.Delete(image);
+            }
+
+            _unit.Save();
+
+            foreach (var item in files)
+            {
+                var rootPath = _hostEnvironment.WebRootPath;
+                var uploads = Path.Combine(rootPath, "uploads/images");
+                var extension = Path.GetExtension(item.FileName);
+                var dynamicFileName = Guid.NewGuid() + "_" + product.Id + extension;
+                using (var filesStream = new FileStream(Path.Combine(uploads, dynamicFileName), FileMode.Create))
+                {
+                    item.CopyTo(filesStream);
+                }
+
+                //add product Image for new product
+
+                var image = new Image { Path = dynamicFileName, ProductId = product.Id };
+
+                _unit.ImageRepository.Insert(image);
+            }
+        }
+
+        return RedirectToAction("Index", "Product");
     }
 }

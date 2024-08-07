@@ -7,11 +7,9 @@ public class ProductController : Controller
 {
     private readonly UnitOfWork _unit = new UnitOfWork();
 
-    [Route("Product/{id:int}")]
-    public IActionResult Info(int? id)
+    [Route("/Product/{id:int}")]
+    public IActionResult Info(int id)
     {
-        if (id == null) return RedirectToAction("Index", "Home");
-
         var product = _unit.ProductRepository.Get(e => e.Id == id, includeProperties: "Images,Categories")
             .FirstOrDefault();
 
