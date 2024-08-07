@@ -9,19 +9,25 @@
 
 <div class="">
 
-    <div class="mt-5 text-danger d-flex align-items-center" style="height: 40px">
-        @{
-            if (TempData["Message"] != null)
-            {
-                @TempData["Message"]
+    <div class="d-flex align-items-center" style="height: 40px">
+        <div class="text-danger">
+            @{
+                if (TempData["Message"] != null)
+                {
+                    @TempData["Message"]
+                }
             }
-        }
+        </div>
+
+        <div class="ms-auto">
+            <a asp-controller="Order" asp-action="Index" class="btn btn-link">View my orders</a>
+        </div>
     </div>
 
 
     @if (!Model.Any())
     {
-        <div class="mt-5">
+        <div class="">
             <p>Your cart is empty!</p>
         </div>
     }
@@ -79,7 +85,7 @@
 
             <div class="col-2">
                 <form method="post" asp-controller="Order" asp-action="CreateOrder">
-                    <button type="submit" class="btn btn-success">Make purchase</button>
+                    <button type="submit" class="btn btn-success">Make order</button>
                 </form>
             </div>
         </div>

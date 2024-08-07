@@ -23,11 +23,28 @@ public class OrderController : Controller
     }
 
     [Authorize]
-    public IActionResult Info(int orderId)
+    [Route("/Order/{id:int}")]
+    public IActionResult Info(int id)
     {
-        var order = _unit.OrderRepository.GetById(orderId);
+        var username = User.Identity.Name;
+        var user = _unit.UserRepository.Get(e => e.Username == username).FirstOrDefault();
+        if (user == null)
+            return NotFound();
+
+        var order = _unit.OrderRepository.Get(e => e.Id == id && e.UserId == user.Id, includeProperties: "OrderItems")
+            .FirstOrDefault();
 
         if (order == null) return NotFound();
+
+        var orderItems = order.OrderItems;
+
+        foreach (var item in orderItems)
+        {
+            var product = _unit.ProductRepository.Get(p => p.Id == item.ProductId, includeProperties: "Images")
+                .FirstOrDefault();
+            if (product == null) continue;
+            item.Product = product;
+        }
 
         return View(order);
     }
@@ -36,6 +53,8 @@ public class OrderController : Controller
     [HttpPost]
     public IActionResult CreateOrder()
     {
+        const string quantityInvalid = "Can not make purchase! Quantity is invalid!";
+
         var user = _unit.UserRepository.Get(x => x.Username == User.Identity.Name).First();
 
         IEnumerable<CartItem> cartItems = _unit.CartItemRepository
@@ -43,25 +62,26 @@ public class OrderController : Controller
 
         if (cartItems.Any(item => item.Quantity > item.Product.Quantity))
         {
-            TempData["Message"] = "Can not make purchase! Quantity is invalid!";
+            TempData["Message"] = quantityInvalid;
             return RedirectToAction("Index", "CartItem");
         }
 
-        Order newPurchase = new()
+        Order newOrder = new()
         {
             UserId = user.Id,
             Status = OrderStatus.Pending,
             CreatedAt = DateTime.Now,
+            CompletedAt = null
         };
 
-        _unit.OrderRepository.Insert(newPurchase);
+        _unit.OrderRepository.Insert(newOrder);
         _unit.Save();
 
         foreach (var item in cartItems)
         {
             _unit.OrderItemRepository.Insert(new OrderItem()
             {
-                OrderId = newPurchase.Id,
+                OrderId = newOrder.Id,
                 ProductId = item.ProductId,
                 Price = item.Product.Price,
                 Quantity = item.Quantity
@@ -75,6 +95,6 @@ public class OrderController : Controller
 
         _unit.Save();
 
-        return RedirectToAction("Info", "Order", new { purchaseId = newPurchase.Id });
+        return RedirectToAction("Info", "Order", new { purchaseId = newOrder.Id });
     }
 }

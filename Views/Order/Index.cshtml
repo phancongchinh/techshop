@@ -9,15 +9,20 @@
 
 <div class="">
 
+    <div class="d-flex flex-row-reverse align-items-center" style="height: 40px">
+        <a asp-controller="CartItem" asp-action="Index" class="btn btn-link">View my cart</a>
+    </div>
+
     <div class="row">
         <table class="table">
             <thead>
             <tr>
-                <td class="col-2">Order No.</td>
+                <td class="col-1">Order No.</td>
                 <td class="col-3">Created at</td>
-                <td class="col-3">Status</td>
                 <td class="col-2">Total price</td>
-                <td class="col-2"></td>
+                <td class="col-3">Status</td>
+                <td class="col-2">Completed at</td>
+                <td class="col-1"></td>
             </tr>
             </thead>
             <tbody>
@@ -27,10 +32,11 @@
                 <tr>
                     <td>@i.Id</td>
                     <td>@i.CreatedAt</td>
-                    <td>@i.Status</td>
                     <td>@i.OrderItems.Sum(x => x.Price)</td>
+                    <td>@i.Status</td>
+                    <td>@i.CreatedAt</td>
                     <td class="col-3">
-                        <a href="/purchase/info?purchaseId=@i.Id">Details</a>
+                        <a href="/Order/@i.Id">Details</a>
                     </td>
                 </tr>
             }

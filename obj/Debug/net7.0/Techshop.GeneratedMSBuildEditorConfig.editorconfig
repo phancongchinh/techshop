@@ -58,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQmFja29mZmljZVxWaWV3c1xPcmRlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/_EHOU/Techshop/Techshop/Areas/Backoffice/Views/Order/Info.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQmFja29mZmljZVxWaWV3c1xPcmRlclxJbmZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/_EHOU/Techshop/Techshop/Areas/Backoffice/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQmFja29mZmljZVxWaWV3c1xQcm9kdWN0XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -120,6 +124,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/_EHOU/Techshop/Techshop/Views/Order/Info.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/_EHOU/Techshop/Techshop/Views/Product/_CardProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxfQ2FyZFByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/_EHOU/Techshop/Techshop/Views/Shared/Error.cshtml]

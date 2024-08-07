@@ -8,5 +8,12 @@
 <h2>Search results:</h2>
 
 <div>
-    Empty!
+    <div class="mt-4 row">
+        @foreach (var i in Model)
+        {
+            <div class="mt-2 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                @await Html.PartialAsync("_CardProduct", i)
+            </div>
+        }
+    </div>
 </div>

@@ -11,11 +11,13 @@
     <table class="table">
         <thead>
         <tr>
-            <td class="col-2">Order No.</td>
-            <td class="col-2">Customer's username.</td>
+            <td class="col-1">Order No.</td>
             <td class="col-2">Created at</td>
+            <td class="col-2">Customer's username</td>
+            <td class="col-2">Total price</td>
             <td class="col-2">Status</td>
             <td class="col-2">Completed at</td>
+            <td class="col-1"></td>
         </tr>
         </thead>
         <tbody>
@@ -24,12 +26,13 @@
         {
             <tr>
                 <td>@i.Id</td>
-                <td>@i.User.Username</td>
                 <td>@i.CreatedAt</td>
+                <td>@i.User.Username</td>
+                <td>@i.OrderItems.Sum(x => x.Price)</td>
                 <td>@i.Status</td>
                 <td>@i.CompletedAt</td>
-                <td class="col-3" hidden>
-                    <a class="btn btn-link" asp-area="Backoffice" asp-controller="Order" asp-action="Info">Details</a>
+                <td class="col-3">
+                    <a href="/Backoffice/Order/@i.Id">Details</a>
                 </td>
             </tr>
         }

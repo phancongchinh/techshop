@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Techshop.Models.Entities.Product>
+﻿@model Techshop.Models.ViewModels.HomeVm
 
 @{
     ViewData["Title"] = "Home Page";
@@ -7,13 +7,35 @@
 <div class="w-100">
 
     <div class="mb-3 w-100">
-        <form asp-controller="Product" asp-action="Search">
-            <div class="input-group">
-                <span class="input-group-text" id="inputGroup-sizing-default">
-                    <i class="fa fa-search"></i>
-                </span>
-                <input type="text" class="form-control" placeholder="What are you looking for... ">
+
+        <form action="/Product/Search?Search=@Model.Search&CategoryId=@Model.CategoryId">
+
+            <div class="input-group mb-3">
+                <button class="btn btn-outline-secondary dropdown-toggle"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Category
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="/Product/Search?Search=@Model.Search"
+                           onclick="() => {@Model.CategoryId = -1}">
+                            Tất cả
+                        </a>
+                    </li>
+                    @foreach (var i in Model.Categories)
+                    {
+                        <li>
+                            <a class="dropdown-item" href="/Product/Search?Search=@Model.Search&CategoryId=@i.Id"
+                               onclick="() => {@Model.CategoryId = @i.Id}">
+                                @i.Name
+                            </a>
+                        </li>
+                    }
+                </ul>
+                <input asp-for="Search" class="form-control" placeholder="What are you looking for...">
+                <button class="btn btn-outline-secondary" type="submit">Search</button>
             </div>
+
         </form>
     </div>
 
@@ -43,9 +65,7 @@
     </div>
 
     <div class="mt-4 row">
-
-
-        @if (!Model.Any())
+        @if (Model.Products == null || !Model.Products.Any())
         {
             <div>
                 You webpage seems to have no product yet!
@@ -53,7 +73,7 @@
         }
         else
         {
-            @foreach (var i in Model)
+            @foreach (var i in Model.Products)
             {
                 <div class="mt-2 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
                     @await Html.PartialAsync("_CardProduct", i)

@@ -14,7 +14,7 @@ public class Order
 
     public DateTime CreatedAt { get; set; }
 
-    public DateTime CompletedAt { get; set; }
+    public DateTime? CompletedAt { get; set; }
 
     public virtual User User { get; set; }
 

@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Techshop.Models.Entities;
+using Techshop.Models.enums;
 using Techshop.Repository.Configurations;
 
 namespace Techshop.Repository;

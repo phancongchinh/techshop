@@ -18,9 +18,14 @@ public class ProductController : Controller
         return View(product);
     }
 
-    public IActionResult Search(string q)
+    [HttpGet]
+    public IActionResult Search(int categoryId, string search)
     {
-        var products = _unit.ProductRepository.Get(e => e.Name.Contains(q), includeProperties: "Images").ToList();
+        search ??= "";
+        var products = _unit.ProductRepository.Get(
+            p => (p.Brand + p.Model).ToLower().Contains(search.ToLower()) && p.Categories.Select(c => c.Id).Contains(categoryId),
+            includeProperties: "Images").ToList();
+        
         return View(products);
     }
 }

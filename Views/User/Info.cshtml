@@ -9,7 +9,7 @@
 
 <div class="">
 
-    <div class="d-flex">
+    <div class="d-flex align-items-center" style="height: 40px">
         <div class="ms-auto">
             @if (User.Identity is { IsAuthenticated: true } && User.IsInRole("Administrator"))
             {
@@ -17,6 +17,7 @@
             }
             else
             {
+                <a asp-controller="CartItem" asp-action="Index" class="btn btn-link">View my cart</a>
                 <a asp-controller="Order" asp-action="Index" class="btn btn-link">View my orders</a>
             }
         </div>

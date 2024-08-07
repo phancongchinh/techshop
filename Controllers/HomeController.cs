@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Techshop.Models;
+using Techshop.Models.ViewModels;
 using Techshop.Repository;
 
 namespace Techshop.Controllers;
@@ -18,7 +19,15 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         var products = _unit.ProductRepository.Get(includeProperties: "Images").ToList();
-        return View(products);
+        var categories = _unit.CategoryRepository.Get().ToList();
+
+        var homeVm = new HomeVm
+        {
+            Products = products,
+            Categories = categories
+        };
+
+        return View(homeVm);
     }
 
     public IActionResult Privacy()
