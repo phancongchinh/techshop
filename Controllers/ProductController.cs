@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Techshop.Models.Entities;
 using Techshop.Repository;
 
 namespace Techshop.Controllers;
@@ -22,10 +23,22 @@ public class ProductController : Controller
     public IActionResult Search(int categoryId, string search)
     {
         search ??= "";
-        var products = _unit.ProductRepository.Get(
-            p => (p.Brand + p.Model).ToLower().Contains(search.ToLower()) && p.Categories.Select(c => c.Id).Contains(categoryId),
-            includeProperties: "Images").ToList();
-        
+
+        List<Product> products;
+        if (categoryId != 0)
+        {
+            products = _unit.ProductRepository.Get(
+                p => string.Concat(p.Brand, p.Model).ToLower().Trim().Contains(search.ToLower().Trim()) &&
+                     p.Categories.Select(c => c.Id).Contains(categoryId),
+                includeProperties: "Images").ToList();
+        }
+        else
+        {
+            products = _unit.ProductRepository.Get(
+                p => string.Concat(p.Brand, p.Model).ToLower().Trim().Contains(search.ToLower().Trim()),
+                includeProperties: "Images").ToList();
+        }
+
         return View(products);
     }
 }

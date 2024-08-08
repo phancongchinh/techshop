@@ -1,4 +1,4 @@
-﻿@model Techshop.Models.Entities.Order
+﻿@model Techshop.Models.ViewModels.OrderUpdateVm
 
 @{
     ViewBag.Title = "Backoffice";
@@ -11,13 +11,37 @@
 
     <div class="row mt-5">
         <div class="col-2">
-            <b>Order No.</b>: @Model.Id
+            <b>Order No.</b>: @Model.Order.Id
         </div>
-        <div class="col-4">
-            <b>Created at</b>: @Model.CreatedAt
+        <div class="col-3">
+            <b>Created at</b>: @Model.Order.CreatedAt
         </div>
-        <div class="col-4">
-            <b>State</b>: @Model.Status
+        <div class="col-4 d-flex align-items-center">
+            <div>
+                <b>Status</b>: @Model.Status
+            </div>
+
+            <div class="ms-auto">
+                <form asp-area="Backoffice"
+                      asp-controller="Order"
+                      asp-action="Update"
+                      asp-route-id="@Model.Order.Id"
+                      method="post"
+                      class="d-flex align-items-center">
+                    <select class="form-select form-select-sm" asp-for="Status">
+                        <option selected>Update order status</option>
+                        @foreach (var status in Model.OrderStatusValues)
+                        {
+                            <option value="@status">@status</option>
+                        }
+                    </select>
+                    <button class="btn btn-sm btn-outline-primary ms-1" type="submit">Update</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <b>Completed at</b>: @Model.Order.CompletedAt
         </div>
     </div>
 
@@ -33,14 +57,14 @@
             </thead>
             <tbody>
 
-            @foreach (var i in Model.OrderItems)
+            @foreach (var i in Model.Order.OrderItems)
             {
                 <tr>
                     <td>
-                        <a href="/products/@i.ProductId">@i.Product.Name</a>
+                        <a href="/Product/@i.ProductId">@i.Product.Name</a>
                     </td>
                     <td>@i.Quantity</td>
-                    <td>$ @(i.Product.Price * i.Quantity)</td>
+                    <td>@($"{(i.Product.Price * i.Quantity):C0}")</td>
                     <td></td>
                 </tr>
             }
@@ -54,7 +78,7 @@
 
             <div class="col-2 ms-auto">
                 <h5 class="align-content-lg-end">
-                    Total: $ @Model.OrderItems.Sum(x => x.Quantity * x.Product.Price)
+                    Total: @($"{Model.Order.OrderItems.Sum(x => x.Quantity * x.Product.Price):C0}")
                 </h5>
             </div>
 

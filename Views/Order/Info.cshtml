@@ -16,8 +16,11 @@
         <div class="col-4">
             <b>Created at</b>: @Model.CreatedAt
         </div>
+        <div class="col-2">
+            <b>Status</b>: @Model.Status
+        </div>
         <div class="col-4">
-            <b>State</b>: @Model.Status
+            <b>Completed at</b>: @Model.CompletedAt
         </div>
     </div>
 
@@ -40,7 +43,7 @@
                         <a href="/products/@i.ProductId">@i.Product.Name</a>
                     </td>
                     <td>@i.Quantity</td>
-                    <td>$ @(i.Product.Price * i.Quantity)</td>
+                    <td>@($"{i.Product.Price * i.Quantity:C0}")</td>
                     <td></td>
                 </tr>
             }
@@ -54,7 +57,7 @@
 
             <div class="col-2 ms-auto">
                 <h5 class="align-content-lg-end">
-                    Total: $ @Model.OrderItems.Sum(x => x.Quantity * x.Product.Price)
+                    Total: @($"{Model.OrderItems.Sum(x => x.Quantity * x.Product.Price):C0}")
                 </h5>
             </div>
 

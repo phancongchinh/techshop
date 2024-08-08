@@ -32,7 +32,7 @@
                 <tr>
                     <td>@i.Id</td>
                     <td>@i.CreatedAt</td>
-                    <td>@i.OrderItems.Sum(x => x.Price)</td>
+                    <td>@($"{i.OrderItems.Sum(x => x.Price):C0}") </td>
                     <td>@i.Status</td>
                     <td>@i.CreatedAt</td>
                     <td class="col-3">

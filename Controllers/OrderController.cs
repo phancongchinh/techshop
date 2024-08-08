@@ -95,6 +95,6 @@ public class OrderController : Controller
 
         _unit.Save();
 
-        return RedirectToAction("Info", "Order", new { purchaseId = newOrder.Id });
+        return RedirectToAction("Info", "Order", newOrder.Id);
     }
 }

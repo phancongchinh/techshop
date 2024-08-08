@@ -32,7 +32,7 @@ public class AuthController : Controller
             await Authenticate(user);
 
             if (user.Role.Name == "Administrator")
-                return Redirect("/Backoffice/Dashboard");
+                return Redirect("/Backoffice/Order");
 
             return RedirectToAction("Index", "Home");
         }
